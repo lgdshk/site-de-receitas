@@ -1,0 +1,10 @@
+# VS Code
+.vscode/
+.prettierrc
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.log
