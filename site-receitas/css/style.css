@@ -1,0 +1,198 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+  background-color: #F8F1EA;
+  color: #3D3028;
+  font-family: "Nunito", Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 22px;
+}
+
+#cabecalho{
+  padding: 10px;
+  background-color: #E8D2C0;
+  border: 1px double gray;
+  width: 100%;
+  margin-top: 1px;
+  border-radius: 10px;
+}
+
+#cabecalho h1{
+  font-family: "Lora", Georgia, "Playfair Display", serif;
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  line-height: 3;
+  font-size: 32px;
+  color: #ce1111;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgba(61, 48, 40, 0.2);
+}
+
+#menu{
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #E8D2C0;
+  border: 1px double gray;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px clamp(24px, 6vw, 96px);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.link-receita {
+  text-decoration: none;
+  color: #3F6F8F;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.link-receita:hover {
+  color:  #284B63;
+  text-decoration: none;
+}
+
+#conteudo-principal{
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#secao {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+  flex-wrap: wrap;
+  padding: 30px;
+  border: 1px double gray;
+  background-color: #E8D2C0;
+  margin-top: 20px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card-receita{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  background-color: #FFF9F2;
+  border: 1px double gray;
+  width: 360px;
+  height: 440px;
+  border-radius: 10px;
+}
+
+.card-receita img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px double gray;
+}
+
+.card-receita h2 {
+  font-family: "Lora", Georgia, "Playfair Display", serif;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+  line-height: 2.4;
+  font-size: 22px;
+  font-style: italic;
+  color: #ce1111;
+}
+
+.card-receita p {
+  font-family: "Nunito", Arial, sans-serif;
+  letter-spacing: 0.1px;
+  word-spacing: 0.2px;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.card-receita a {
+  text-decoration: none;
+  color: #3F6F8F;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card-receita a:hover {
+    color:  #284B63;
+    text-decoration: none;
+}
+
+#rodape {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 1px;
+  background-color: #E8D2C0;
+  color: #603b2b;
+  border-radius: 10px;
+}
+
