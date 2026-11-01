@@ -14,23 +14,22 @@
         <h1><strong>Receitas da Vovó</strong></h1>
     </header>
 
-    <nav id="menu" class="container">
-        <a class="link-receita" href="/site-receitas/index.html">Início</a>
+    <nav id="menu">
+        <a class="link-receita" href="./index.html">Início</a>
         <a class="link-receita" href="./receita2.html">Cuzcuz Paulista</a>
-        <a class="link-receita" href="./receita3.html">Bolo de cenoura</a>
+        <a class="link-receita" href="./receita3.html">Lasanha a Bolonhesa</a>
     </nav>
-    <br>
-        <div id="indice" class="container">
-        <a href="#receita">Receita</a>
-        <a href="#ListaIngredientes">Ingredientes</a>
-        <a href="#preparo">Modo de preparo</a>
-        <a href="#dicas">Dicas</a>
-        <a href="#curiosidades">Curiosidades</a>
+        <div id="indice">
+        <a class="link-receita" href="#receita">Receita</a>
+        <a class="link-receita" href="#lista">Ingredientes</a>
+        <a class="link-receita" href="#modo-de-preparo">Modo de preparo</a>
+        <a class="link-receita" href="#dicas">Dicas</a>
+        <a class="link-receita" href="#curiosidades">Curiosidades</a>
     </div>
 
     <main id="principal">
         <article id="receita">
-            <h2><strong>Bolo de cenoura</strong></h2>
+            <h2><strong>Bolo de Cenoura</strong></h2>
             <figure>
                 <img src="/site-receitas/img/Bolo-cenoura.png" alt="Bolo de cenoura" width="300" height="220">
                 <figcaption>Bolo de cenoura com cobertura de chocolate gostosinho </figcaption>
@@ -38,32 +37,34 @@
 
             <p><strong>Tempo de preparo: </strong> 40min </p>
             <p><strong>Rendimento: </strong> 8 porções</p>
-            <p><strong>Nível de dificuldade: </strong> Medio</p>
+            <p><strong>Nível de dificuldade: </strong> Médio</p>
         </article>
     </main>
 
-    <section class="ListaIngredientes">
-        <h2>Ingredientes da massa</h2>
-        <ul>
-            <li>1/2 xícara (chá) de óleo</li>
-            <li>3 cenouras médias raladas</li>
-            <li>4 ovos</li>
-            <li>2 xícaras (chá) de açúcar</li>
-            <li>2 e 1/2 xícaras (chá) de farinha de trigo</li>
-            <li>1 colher (sopa) de fermento em pó</li>
-        </ul>
-    </section>
-    <section class="ListaIngredientes">
-        <h2>Ingrediente da cobertura</h2>
-        <ul>
-            <li>1 colher (sopa) de manteiga</li>
-            <li>3 colheres (sopa) de chocolate em pó</li>
-            <li>1 xícara (chá) de açúcar</li>
-            <li>1 xícara (chá) de leite</li>
-        </ul>
-    </section>
+    <div class="grupo-ingredientes">
+        <section class="ListaIngredientes" id="lista">
+            <h2>Ingredientes da massa</h2>
+            <ul>
+                <li>1/2 xícara (chá) de óleo</li>
+                <li>3 cenouras médias raladas</li>
+                <li>4 ovos</li>
+                <li>2 xícaras (chá) de açúcar</li>
+                <li>2 e 1/2 xícaras (chá) de farinha de trigo</li>
+                <li>1 colher (sopa) de fermento em pó</li>
+            </ul>
+        </section>
+        <section class="ListaIngredientes">
+            <h2>Ingredientes da cobertura</h2>
+            <ul>
+                <li>1 colher (sopa) de manteiga</li>
+                <li>3 colheres (sopa) de chocolate em pó</li>
+                <li>1 xícara (chá) de açúcar</li>
+                <li>1 xícara (chá) de leite</li>
+            </ul>
+        </section>
+    </div>
 
-    <section class="preparo">
+    <section class="preparo tutorial" id="modo-de-preparo">
         <h2>Modo de preparo da massa</h2>
         <ol>
             <li>Acrescente o açúcar e bata novamente por 5 minutos.</li>
@@ -73,7 +74,7 @@
         </ol>
     </section>
 
-    <section class="preparo">
+    <section class="preparo tutorial">
         <h2>Modo de preparo da cobertura</h2>
         <ol>
             <li>Despeje em uma tigela a manteiga, o chocolate em pó, o açúcar e o leite, depois misture.</li>
